@@ -1,0 +1,17 @@
+# Environment variables
+.env
+*.env
+
+# Virtual environment & cache
+venv/
+__pycache__/
+instance/
+
+# Datasets
+*.csv
+
+# ML models / artifacts
+*.pkl
+
+# OS files
+.DS_Store
