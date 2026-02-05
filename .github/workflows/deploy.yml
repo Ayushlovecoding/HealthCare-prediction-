@@ -37,8 +37,8 @@ jobs:
       - name: Build & push frontend
         run: |
           docker build \
-            --build-arg VITE_API_URL=${{ vars.VITE_API_URL }} \
-            --build-arg VITE_SOCKET_URL=${{ vars.VITE_SOCKET_URL }} \
+            --build-arg VITE_API_URL=${{ secrets.VITE_API_URL }} \
+            --build-arg VITE_SOCKET_URL=${{ secrets.VITE_SOCKET_URL }} \
             -t ${{ secrets.DOCKER_USERNAME }}/healthcare-client:latest ./client
           docker push ${{ secrets.DOCKER_USERNAME }}/healthcare-client:latest
 

@@ -17,7 +17,7 @@ const config = {
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
   
   // ML Service Configuration
-  mlServiceUrl: process.env.ML_SERVICE_URL || 'http://localhost:5001',
+  mlServiceUrl: process.env.ML_SERVICE_URL || 'http://localhost:8000',
   
   // CORS Configuration
   corsOrigins: process.env.CORS_ORIGINS 

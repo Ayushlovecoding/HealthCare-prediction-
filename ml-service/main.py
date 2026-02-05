@@ -48,8 +48,8 @@ class PatientVitals(BaseModel):
     gcs_score: Optional[int] = Field(14, ge=3, le=15, description="Glasgow Coma Scale score")
     lactate_level: Optional[float] = Field(2.0, ge=0, description="Blood lactate level")
 
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "json_schema_extra": {
             "example": {
                 "age": 65,
                 "gender": "Male",
@@ -63,6 +63,7 @@ class PatientVitals(BaseModel):
                 "lactate_level": 2.5
             }
         }
+    }
 
 
 class PredictionResponse(BaseModel):

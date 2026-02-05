@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     
     # Server configuration
     HOST: str = "0.0.0.0"
-    PORT: int = 5001
+    PORT: int = 8000
     DEBUG: bool = False
     
     # Model paths
